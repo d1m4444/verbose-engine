@@ -29,7 +29,6 @@ justify-content:left;
     font-weight: bold; 
     color: black;
     text-decoration: none;
-    
 }
 .search-container {
     display: flex;
@@ -54,8 +53,14 @@ justify-content:left;
     width: 14px; 
     height: 14px;
 }
-.right-icons {
+.right-icon {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
     display: flex;
-    gap: 10px;
-    justify-self: right;
+    align-items: center; 
 }
+
+
+
+
