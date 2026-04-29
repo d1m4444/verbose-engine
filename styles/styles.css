@@ -1,63 +1,495 @@
-html {
-   box-sizing: border-box;
+body
+ {
+    margin-left: 300px;
+    max-width:1296px ;
 }
-*, *::before, *::after {
-   box-sizing: inherit;
-}
-body{
-    margin: 0;
-}
-.container{
-   max-width: 11295;
-   width: 100%;
-   margin: 0;
-   padding: 295;
 
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    background-color: #FFFFFF;
+    text-decoration: none;
 }
-@font-face {
-    font-family: 'Beatrice Deck Trial';
-    src: url('BeatriceDeckTrial-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+
+.left-side {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.htitle{
+    font-family: 'Beatrice Deck', sans-serif;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.center-links {
+    display: grid; justify-items: center;
+}
+
+.levopravo {
+    
+    width: 35px;
+    height: 35px;
+    color: #333;
+}
+
+.header-bottom {
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    
 }
 .header_title {
     font-family: 'Beatrice Deck', sans-serif;
+    font-weight: normal;
+    justify-content: space-between;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 50px;
+    font-size: 16px;
 }
-.header_title a {
-    font-weight: normal; 
-      width: 69px;
-      height: 72px;
-}
-.header_title h1 {
-    font-weight: bold; 
-    
-}
+
 .search-container {
     display: flex;
-    margin-top: 12px; 
+    margin-top: 12px;
+    color: #00000066;
 }
+
+.text-search {
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: normal;
+    width: 53px;
+    height: 18px;
+    letter-spacing: 2px;
+    color: #000000;
+    line-height: auto;
+    font-size: 12px;
+}
+
 .custom-search-button {
-   background-color: #f0f0f0; 
-   border-radius: 5px; 
-   padding: 10px 12px;
-   font-size: 16px; 
-   font-weight: normal; 
-   cursor: pointer;
-  
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    padding: 10px 12px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
     width: 367px;
     height: 50px;
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
+}
+.right-icon {
+    display: flex;
+    align-items: right;
+    gap: 0px;
+    
 }
 
-.icon img {
-    width: 14px; 
-    height: 14px;
+.right-icon img {
+    width: 45px;
+    height: 45px;
 }
-.right-icons {
+
+.new-collection {
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    line-height: -40px;
+    padding: 100px 20px;
+    
+}
+.main{
+    background-color: #FFFFFF;
+}
+.main_title {
+    font-family: 'Beatrice Deck-Extrabold', sans-serif;
+    font-size: 48px;
+    letter-spacing: -2px;
+    line-height: 40px;
+    font-weight: 900;
+    text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8);
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    position: absolute;
+  bottom: 420px;
+    
+}
+
+.collection-images {
     display: flex;
-    gap: 10px;
-    justify-self: right;
+    margin: 0 450px;
+    width: 366px;
+    height: 376px;
+    
+}
+
+.collection-actions {
+    display: flex;
+    
+    margin: 10px 30px;
+}
+
+.nav-buttons {
+   margin-left: 10px;
+   position: relative;
+   margin-top: -50px;
+}
+
+.nav-buttons-center{
+    display: grid;
+  justify-items: center;
+}
+.main_title1 {
+    font-family: 'Beatrice Deck-Extrabold', sans-serif;
+    font-size: 60px;
+    letter-spacing: -2px;
+    line-height: 40px;
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    margin: -140px 45px;
+    margin-left: 100px;
+}
+
+.main_title3 {
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: normal;
+    line-height: 40px;
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    margin: -140px 45px;
+    margin-left: 90px;
+}
+.main_title4 {
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: normal;
+    line-height: 40px;
+    font-weight: 900;
+    color: #8A8A8A;
+    word-spacing: 50px;
+    text-decoration: none;
+    list-style-type: none;
+    margin: -140px 45px;
+}
+.text-gotoshop {
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: medium;
+    font-size: 16px;
+    letter-spacing: 0;
+    width: 91;
+    height: 24;
+    color: black;
+    line-height: auto;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 60px;
+    padding: 40px;
+}
+
+.product-item {
+   
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: 70px;
+}
+.product-item1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+ padding: 40px;
+ 
+}
+
+.photo-item p {
+  
+  font-size: 14px;
+  color: #00000066;
+}
+
+.product-item img {
+  display: flex;
+    flex-wrap: wrap;
+    width: 304px;
+    height: 313px;
+}
+.product-item1 img {
+  display: flex;
+    flex-wrap: wrap;
+    width: 366px;
+    height: 376px;
+}
+.Vector {
+    width: 47.5;
+    height: 12;
+    margin-left: 70px;
+}
+
+
+.gotoshop {
+    width: 265px;
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-weight: 500px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    z-index: 10;
+     margin-top: -50px;
+     margin-left: -20px;
+}
+
+.gotoshop:active {
+    animation: approach-and-fade 0.5s ease-in-out forwards;
+    background: #fff;
+}
+
+@keyframes approach-and-fade {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.gotoshop {
+    transition: all 0.3s ease-in-out;
+}
+
+.gotoshop:hover {
+    background: linear-gradient(to bottom, #797878, #888787);
+    opacity: 0.8;
+}
+
+.gotoshop:active {
+    background: linear-gradient(to bottom, #3a3a3a, #3d3d3d);
+    opacity: 0.8;
+}
+
+.gotoshop {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .gotoshop {
+        font-size: 0.8em;
+    }
+}
+
+.summer {
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: normal;
+    justify-content: space-between;
+    color: black;
+    text-decoration: none;
+    margin-top: -20px;
+    word-spacing: -5px;
+    line-height: normal;
+    margin-left: 5px;
+    position: absolute;
+  bottom: 370px;
+}
+
+
+
+.V-Neck-T-Shirt {
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: medium;
+    font-size: 12px;
+    letter-spacing: 0;
+    color: #00000066;
+    text-decoration: none;
+}
+
+.Cotton-Shirt {
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: medium;
+    font-size: 12px;
+    letter-spacing: 0;
+    color: #00000066;
+    text-decoration: none;
+}
+
+.Henley-T-Shirt {
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: medium;
+    font-size: 12px;
+    letter-spacing: 0;
+    color: #00000066;
+    text-decoration: none;
+}
+
+.Crewneck-T-Shirt {
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: medium;
+    font-size: 12px;
+    color: #00000066;
+    text-decoration: none;
+}
+
+.Embroidered {
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: medium;
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #000000;
+    text-decoration: none;
+}
+
+.Basic {
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: medium;
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #000000;
+    text-decoration: none;
+}
+
+.Blurred {
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: medium;
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #000000;
+    text-decoration: none;
+}
+
+.Full {
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: medium;
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #000000;
+    text-decoration: none;
+}
+.more{
+    display: grid;
+  justify-items: center;
+}
+.main_title5{
+    margin-top: 200px;
+    font-family: 'Beatrice Deck-Regular', sans-serif;
+    font-size: 48px;
+    letter-spacing: -2px;
+    line-height: 40px;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    display: grid;
+    justify-items: center;
+    font-weight: 600px;
+}
+.main_title6{
+    font-family: 'Beatrice Deck-Light', sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    display: grid;
+    justify-items: center;
+    
+}
+.photo-item2 {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.photo-item2 img {
+  width: 317px;
+ height: 389px;
+  margin-top: 100px;
+  margin-left: 5px;
+  align-items: flex-start;
+}
+
+.photo-item2 a:nth-child(even){
+    margin-top: 40px;
+    display: block;
+    
+}
+.footer{
+  align-items: flex-start;
+  background-color: #D9D9D9;
+  padding-top: 30px; 
+  margin-top: 100px;
+}
+.footer1{
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: medium;
+    font-size: 12px;
+    letter-spacing: 0;
+    color: #00000066;
+    text-decoration: none;
+    gap: 20px;
+    margin-top: 50px;
+    margin-left: 150px;
+    word-spacing: 320px;
+}
+.footer2{
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: medium;
+    font-size: 12px;
+    letter-spacing: 0;
+    margin-top: -250px;
+    margin-left: 150px;
+}
+.footer2 a{
+    color: #00000066;
+    text-decoration: none;
+}
+.footer3{
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: medium;
+    font-size: 12px;
+    letter-spacing: 0;
+    color: #00000066;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-left: 150px;
+    
+}
+.footer4{
+    font-family: 'Beatrice Deck', sans-serif;
+    font-weight: medium;
+    font-size: 12px;
+    letter-spacing: 0;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.footer4 a {
+  text-decoration: none;
+  color: #00000066; 
+}
+.footer5{
+    margin-left: 500px;
+    margin-top: 100px;
+}
+main, footer {
+  margin: 0;
+  
 }
