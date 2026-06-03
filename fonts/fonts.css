@@ -8,28 +8,28 @@
 }
 @font-face {
     font-family: 'Beatrice Deck';
-    src: url('styles/fonts/BeatriceDeck-BoldItalic.ttf');
+    src: url('BeatriceDeck-BoldItalic.ttf');
     font-weight: 700px;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Beatrice Deck';
-    src: url('styles/fonts/BeatriceDeck-Medium.ttf');
+    src: url('BeatriceDeck-Medium.ttf');
     font-weight: 500px;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Beatrice Deck-Extrabold';
-    src: url('styles/fonts/BeatriceDeck-Extrabold.ttf');
+    font-family: 'Beatrice Deck';
+    src: url('BeatriceDeck-Extrabold.ttf');
     font-weight: 900px;
     font-style: bold;
     font-display: swap;
 }
 @font-face {
     font-family: 'Beatrice Deck';
-    src: url('styles/fonts/BeatriceDeck-Light.ttf');
+    src: url('BeatriceDeck-Light.ttf');
     font-weight: 300px;
     font-style: normal;
     font-display: swap;
